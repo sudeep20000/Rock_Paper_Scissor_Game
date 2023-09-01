@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rock Paper Scissor Game</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="score-board">
+				<div class="game-name">
+					<p>ROCK</p>
+					<p>PAPER</p>
+					<p>SCISSORS</p>
+				</div>
+				<div class="game-score">
+					<div class="com-score">
+						<p>COMPUTER</p>
+						<p>SCORE</p>
+						<div class="com-board">0</div>
+					</div>
+					<div class="user-score">
+						<p>YOUR</p>
+						<p>SCORE</p>
+						<div class="user-board">0</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rule-sec hide">
+			<img src="./images/game_rules.png" alt="rules" class="rule-Image">
+			<div class="cancle">
+				<img src="./images/cancle.png" alt="cancle">
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="layout">
+				<div class="rock">
+					<img src="./images/image-1.png" alt="rock img">
+				</div>
+				<div class="paper">
+					<img src="./images/image-2.png" alt="paper img">
+				</div>
+				<div class="scissor">
+					<img src="./images/image-3.png" alt="scissor img">
+				</div>
+			</div>
+			<div class="check-area hide">
+				<div class="user-pick">
+					<p class="align up_msg adjust">YOU PICKED</p>
+					<div class="layer-3 layer1 notVisible">
+						<div class="layer-2 layer1 notVisible">
+							<div class="layer-1 layer1 notVisible">
+								<div class="pick-1 visible">
+									<img src="./images/cancle.png" alt="paper" class="user-pick-img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="final-result">
+					<div class="verdict_msg">
+						<p class="align msg msg1">YOU WIN</p>
+						<p class="align msg msg2">AGAINST PC</p>
+					</div>
+					<button class="play_again">PLAY AGAIN</button>
+				</div>
+				<div class="pc-pick">
+					<p class="align pp_msg adjust">PC PICKED</p>
+					<div class="layer-3 layer2 notVisible">
+						<div class="layer-2 layer2 notVisible">
+							<div class="layer-1 layer2 notVisible">
+								<div class="pick-2 visible">
+									<img src="./images/cancle.png" alt="rock" class="pc-pick-img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="win-bgc hide">
+			<div class="win-img-container"></div>
+			<div class="win-msg">
+				<p class="align first">HURRAY!!</p>
+				<p class="align second">YOU WON THE GAME</p>
+			</div>
+			<div class="p-a">
+				<button class="play_again">PLAY AGAIN</button>
+			</div>
+		</div>
+		<div class="btn-sec">
+			<button class="btn next-btn hide">NEXT</button>
+			<button class="btn rule-btn">RULES</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
